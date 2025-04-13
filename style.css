@@ -1,0 +1,65 @@
+*{
+margin: 0;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+}
+#game{
+    background-color: rgba(255, 255, 255, 0.545);
+    padding: 25px;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 52px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+#image{
+    border-radius: 500px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); 
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+#word{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.792);
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 7px;
+}
+#playerinput{
+    display: block;
+    margin: auto;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    caret-color: transparent;
+    text-decoration: underline;
+}
+
+#playerinput:hover::placeholder{
+    color: #222222;
+}
+@keyframes underscore{
+    0%{
+        text-decoration-color: transparent;
+    }
+    100%{
+        text-decoration-color: #999;
+    }}
+#playerInput:focus{
+    animation: 1s infinite underscore;
+}
+
+/* #доделать стиль для number quiz и для виселицы */
