@@ -11,17 +11,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="game">
+    <audio id="audio">
+        <source src="shotgun.wav">
+    </audio>
+    <div id="modal">
+        <form action="">
+            <h2>Настройки</h2>
+            <button id="closeButton">✘</button>
+            <button>Одиночная</button>
+            <button>Для двоих</button>
+        </form>
+    </div>
+    <form id="game">
         <h2>Виселица</h2>
         <img src="hangman0.png" alt="" id="image">
         <h2 id="word">__________</h2>
         <input type="text" placeholder="?" id="playerInput" maxlength="1">
-        <button id="checkButton">Проверить</button>
+        <button id="checkButton" type="submit">Проверить</button>
         <button>Новая игра</button>
-        <button>⚙️</button>
-        <p>Вводи букву, ковбой, и жми "Проверить"</p>
-    </div>
-    <script src="script.js"></script>
+        <button id="settings">⚙️</button>
+        <p id="usedLetters">Вводи букву, ковбой, и жми "Проверить"</p>
+
+    </form>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
 <!-- дз:доделать стиль для number quiz -->

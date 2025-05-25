@@ -59,7 +59,51 @@ body{
         text-decoration-color: #999;
     }}
 #playerInput:focus{
-    animation: 1s infinite underscore;
+    animation: 3s infinite underscore;
 }
-
-/* #доделать стиль для number quiz и для виселицы */
+#modal{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.198);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+#modal form{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 15px 15px 45px #22222277;
+    border-radius: 15px;
+}
+#modal form h2{
+    padding-bottom: 20px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 9px;
+    box-shadow: 5px 5px 5px #2222224c;
+    border-color: #22222200;
+}
+#closeButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.198);
+}
